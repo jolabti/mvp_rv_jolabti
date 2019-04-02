@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+
+        android:id="@+id/rowID"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="#f2efcd"
+
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageID"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center"
+            android:foregroundGravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+
+            >
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/titleID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Mayjen Kunus"
+                android:gravity=""
+                android:textColor="@color/colorPrimary"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
