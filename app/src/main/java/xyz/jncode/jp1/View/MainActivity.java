@@ -10,13 +10,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import xyz.jncode.jp1.Adapter.CustomAdapter;
-import xyz.jncode.jp1.Model.ModelPhoto;
+import xyz.jncode.jp1.Model.Articles;
 import xyz.jncode.jp1.Presenter.Mypresenter;
 import xyz.jncode.jp1.R;
 import xyz.jncode.jp1.Retrofit.GlobalContract;
@@ -83,13 +82,24 @@ public class MainActivity extends AppCompatActivity  implements GlobalContract.I
     }
 
     @Override
-    public void generateDataList(List<ModelPhoto> datalist) {
-
+    public void generateDataList(ArrayList<Articles> datalist) {
         adapter = new CustomAdapter(this,datalist);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL, false);
+
         rvComponent.setLayoutManager(layoutManager);
         rvComponent.setAdapter(adapter);
     }
+
+//    @Override
+//    public void generateDataList(List<ModelNews> datalist) {
+//
+//        adapter = new CustomAdapter(this,datalist);
+//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this,LinearLayoutManager.VERTICAL, false);
+//
+//        rvComponent.setLayoutManager(layoutManager);
+//        rvComponent.setAdapter(adapter);
+//
+//    }
 
     @Override
     protected void onDestroy() {

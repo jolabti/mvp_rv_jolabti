@@ -2,9 +2,9 @@ package xyz.jncode.jp1.Retrofit;
 
 import android.content.Context;
 
-import java.util.List;
+import java.util.ArrayList;
 
-import xyz.jncode.jp1.Model.ModelPhoto;
+import xyz.jncode.jp1.Model.Articles;
 
 public interface GlobalContract {
 
@@ -16,7 +16,7 @@ public interface GlobalContract {
         void showToast(Context context, String message);
 
 
-        void generateDataList(List<ModelPhoto> datalist);
+        void generateDataList(ArrayList<Articles> datalist);
 
     }
 

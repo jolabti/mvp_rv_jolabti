@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">JP1</string>
+    <string name="app_name">Top Headline</string>
+    <string name="hint_name">Search your news ...</string>
 </resources>
